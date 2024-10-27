@@ -27,7 +27,7 @@ function App() {
       })
     }
   }
-  console.log(seclect)
+ 
 
   return (
     <>
