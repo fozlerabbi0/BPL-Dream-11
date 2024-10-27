@@ -1,0 +1,6 @@
+.bgImage {
+    background-image: url('../../assets/Images/bg-shadow.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "img": "img_001.png",
+        "name": "Max Wilson",
+        "country": "Australia",
+        "category": "Batsman",
+        "hand_batting": "Right",
+        "price": 120000
+    },
+    {
+        "id": 2,
+        "img": "img_002.png",
+        "name": "Liam Brown",
+        "country": "England",
+        "category": "Bowler",
+        "hand_batting": "Left",
+        "price": 98000
+    },
+    {
+        "id": 3,
+        "img": "img_003.png",
+        "name": "Aryan Patel",
+        "country": "India",
+        "category": "All-Rounder",
+        "hand_batting": "Right",
+        "price": 150000
+    },
+    {
+        "id": 4,
+        "img": "img_004.png",
+        "name": "Ethan Davis",
+        "country": "New Zealand",
+        "category": "Batsman",
+        "hand_batting": "Left",
+        "price": 130000
+    },
+    {
+        "id": 5,
+        "img": "img_005.png",
+        "name": "Lucas Nguyen",
+        "country": "South Africa",
+        "category": "Bowler",
+        "hand_batting": "Right",
+        "price": 85000
+    },
+    {
+        "id": 6,
+        "img": "img_006.png",
+        "name": "James Wang",
+        "country": "China",
+        "category": "All-Rounder",
+        "hand_batting": "Left",
+        "price": 110000
+    },
+    {
+        "id": 7,
+        "img": "img_007.png",
+        "name": "Noah Sanchez",
+        "country": "West Indies",
+        "category": "Batsman",
+        "hand_batting": "Right",
+        "price": 105000
+    },
+    {
+        "id": 8,
+        "img": "img_008.png",
+        "name": "Benjamin Kim",
+        "country": "South Korea",
+        "category": "Bowler",
+        "hand_batting": "Left",
+        "price": 75000
+    },
+    {
+        "id": 9,
+        "img": "img_009.png",
+        "name": "Oscar Lee",
+        "country": "Sri Lanka",
+        "category": "All-Rounder",
+        "hand_batting": "Right",
+        "price": 125000
+    },
+    {
+        "id": 10,
+        "img": "img_010.png",
+        "name": "Jack Smith",
+        "country": "England",
+        "category": "Batsman",
+        "hand_batting": "Right",
+        "price": 115000
+    },
+    {
+        "id": 11,
+        "img": "img_011.png",
+        "name": "Henry Zhou",
+        "country": "Canada",
+        "category": "Bowler",
+        "hand_batting": "Left",
+        "price": 95000
+    },
+    {
+        "id": 12,
+        "img": "img_012.png",
+        "name": "David Parker",
+        "country": "Australia",
+        "category": "All-Rounder",
+        "hand_batting": "Right",
+        "price": 140000
+    }
+]
