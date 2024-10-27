@@ -1,8 +1,9 @@
 import Banner from '../../assets/Images/banner-main.png'
+import './header.css'
 
 const Header = () => {
     return (
-        <div className="bg-pink-300 w-10/12 mx-auto my-6 text-center rounded-xl">
+        <div className="bgImage  w-10/12 mx-auto my-6 text-center rounded-xl">
             <div>
                 <div className='flex justify-center pt-10'>
                     <img src={Banner} alt="" />
