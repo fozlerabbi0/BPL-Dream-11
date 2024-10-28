@@ -1,47 +1,85 @@
-
 import { useState } from 'react'
 import './App.css'
-import AllPlayers from './components/AllPlayers/AllPlayers'
-import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import Navber from './components/Navber/Navber'
-import Selected from './components/Selected/Selected'
+import Navbar from './components/Navbar/Navbar'
+import Players from './components/Players/Players'
 import Subscribe from './components/Subscribe/Subscribe'
+import Footer from './components/Footer/Footer'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [seclect, setSeclect] = useState({
-    cart: true,
-    status: "cart"
-  })
-  const handleSeclect =(status) => {
-    if(status == "cart"){
-      setSeclect({
-        cart: true,
-        status: "cart"
-      })
+  const [toggle, setToggle] = useState(true)
+  const [claimCoin, setClaimCoin] = useState(0)
+  const [selectedPlayers, setSelectedPlayers] = useState([])
+
+
+
+  const handleRemovePlayer = (pla, notifyPlayerRemove) => {
+    const remove = selectedPlayers.filter(pID => pID.id !== pla.id);
+    setSelectedPlayers(remove)
+    setClaimCoin(claimCoin + pla.price)
+    // notifyPlayerRemove()
+    alert('Remove Success')
+
+
+  }
+
+  const handleSelectedPlayer = (player, notify, notifyWarning, notifyAlradyAddWarning, notifyAlready6Players) => {
+    const alredyAddPlayer = selectedPlayers.find(newPlayer => newPlayer.id == player.id)
+    if (claimCoin >= player.price) {
+      if (alredyAddPlayer) {
+        notifyAlradyAddWarning()
+      }
+      else {
+        if (selectedPlayers.length == 6) {
+          notifyAlready6Players()
+
+        }
+        else {
+          const newPlayers = [...selectedPlayers, player]
+          setSelectedPlayers(newPlayers)
+          // notify()
+          alert('Selected Success  !')
+          setClaimCoin(claimCoin - player.price)
+        }
+      }
     }
-    else{
-      setSeclect({
-        cart: false,
-        status: "about"
-      })
+    else {
+      notifyWarning()
     }
   }
- 
 
+
+  const handleClaimCoin = (coin, notify1) => {
+    setClaimCoin(claimCoin + coin)
+    // notify1()
+    alert('Success Claim !')
+
+
+  }
+
+
+
+  const handleToggleBtn = (selectedBtn) => {
+    if (selectedBtn == 'available') {
+      setToggle(true)
+    }
+    else {
+      setToggle(false)
+    }
+  }
   return (
     <>
-      {/* <h2 className="text-2xl font-bold text-pink-400">Suriya Prity</h2>
-      <h1 className='text-3xl font-bold'>Dream 11</h1> */}
-      <Navber> </Navber>
-      <Header></Header>
-       <div className='flex my-14 '>
-       <AllPlayers></AllPlayers>
-       <Selected seclect={seclect} handleSeclect={handleSeclect}></Selected>
-       </div>
+      <Navbar claimCoin={claimCoin}></Navbar>
+      <Header handleClaimCoin={handleClaimCoin}></Header>
 
-      <Subscribe></Subscribe>
+      <main className='w-10/12 mx-auto'>
+        <Players handleRemovePlayer={handleRemovePlayer} selectedPlayers={selectedPlayers} handleSelectedPlayer={handleSelectedPlayer} toggle={toggle} handleToggleBtn={handleToggleBtn}></Players>
+      </main>
+      <Subscribe className=""></Subscribe>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </>
   )
 }

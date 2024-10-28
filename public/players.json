@@ -1,0 +1,110 @@
+[
+    {
+        "id": 1,
+        "img": "https://i.ibb.co.com/QPNBg15/Tamim-Iqbal.webp",
+        "name": "Tamim Iqbal",
+        "country": "Bangladesh",
+        "category": "Batsman",
+        "hand_batting": "Left-Hand-Bat",
+        "price": 120000
+    },
+    {
+        "id": 2,
+        "img": "https://i.ibb.co.com/9qcyqVL/mahmudullah-consecutive-tons-ns.jpg",
+        "name": "Mahmudullah",
+        "country": "Bangladesh",
+        "category": "Batsman",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 98000
+    },
+    {
+        "id": 3,
+        "img": "https://i.ibb.co.com/99PJ6Z8/wjlpd9guzxk3qwccqfea.jpg",
+        "name": "Taskin Ahmed",
+        "country": "Bangladesh",
+        "category": "Bowler",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 150000
+    },
+    {
+        "id": 4,
+        "img": "https://i.ibb.co.com/TwYY5vc/ab-de-villiers-1200.jpg",
+        "name": "AB de Villiers",
+        "country": "South Africa",
+        "category": "Batsman",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 130000
+    },
+    {
+        "id": 5,
+        "img": "https://i.ibb.co.com/MhJJZfb/Whats-App-Image-2024-01-25-at-07-52-26.webp",
+        "name": "Chris Gayle",
+        "country": "West Indies",
+        "category": "Batsman",
+        "hand_batting": "Left-Hand-Bat",
+        "price": 85000
+    },
+    {
+        "id": 6,
+        "img": "https://i.ibb.co.com/BCDch1S/Mehidy-Hasan-Miraz-3.jpg",
+        "name": "Mehidy Hasan Miraz",
+        "country": "Bangladesh",
+        "category": "All-Rounder",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 110000
+    },
+    {
+        "id": 7,
+        "img": "https://i.ibb.co.com/HV9z30T/download.jpg",
+        "name": "Shane Watson",
+        "country": "Australia",
+        "category": "All-Rounder",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 105000
+    },
+    {
+        "id": 8,
+        "img": "https://i.ibb.co.com/tH84wFx/andre-russell.jpg",
+        "name": "Andre Russell",
+        "country": "West Indies",
+        "category": "All-Rounder",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 75000
+    },
+    {
+        "id": 9,
+        "img": "https://i.ibb.co.com/f0j2Wbp/Mohammad-Amir.jpg",
+        "name": "Mohammad Amir",
+        "country": "Pakistan",
+        "category": "Bowler",
+        "hand_batting": "Left-Hand-Bat",
+        "price": 125000
+    },
+    {
+        "id": 10,
+        "img": "https://i.ibb.co.com/TqC53tB/383091.webp",
+        "name": "Trent Boult",
+        "country": "New Zealand",
+        "category": "Bowler",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 115000
+    },
+    {
+        "id": 11,
+        "img": "https://i.ibb.co.com/Z1fP2cp/z-spo801.jpg",
+        "name": "Lasith Malinga",
+        "country": "Sri Lanka",
+        "category": "Bowler",
+        "hand_batting": "Right-Hand-Bat",
+        "price": 95000
+    },
+    {
+        "id": 12,
+        "img": "https://i.ibb.co.com/2nkC5sG/skysports-shane-warne-australia-5002799.jpg",
+        "name": "Shane Warne",
+        "country": "Australia",
+        "category": "All-Rounder",
+        "hand_batting": "Left-Hand-Bat",
+        "price": 140000
+    }
+]
